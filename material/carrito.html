@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e43cdeff77.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e43cdeff77.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   
+
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Zoe Carrito</title>
+</head>
+
+<body>
+    <!-- barra de navegacion-->
+    <section id="header">
+        <a href="#"><img src="../img/logo.png" class="logo" width="140px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="..\index.html">Inicio</a></li>
+                <li><a href="../material/Productos.html">Productos</a></li>
+                <li><a href="../material/Blog.html">Blog</a></li>
+                <li><a href="../material/contacto.html">Contacto</a></li>
+                <li><a href="../material/login.html" target="_blank">Login</a></li>
+                <li id="lg-bag"><a class="active" href="../material/carrito.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#"><i id="close" class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <!--Mobil-->
+        <div id="mobile">
+            <a href="../material/carrito.html"><i  class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars active"></i>
+        </div>
+    </section>
+    <!--inicio-->
+
+    <section id="page-header1222" class="section-p1">
+        <h2 style="color: #fff;">Carrito</h2>
+    </section>
+
+    <!--Carrito tabla-->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Eliminar</td>
+                    <td>Imagen</td>
+                    <td>Productos</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Sub Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" onclick="return Eliminar()"><i onclick="return Eliminar()" class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="../img/products/j1.jpg"   alt="" srcset=""></td>
+                    <td>Traje de bano</td>
+                    <td>$14.99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$14.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i onclick="return Eliminar()" class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="../img/products/j5.jpg"   alt="" srcset=""></td>
+                    <td>Traje de bano</td>
+                    <td>$14.99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$14.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i onclick="return Eliminar()" class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="../img/products/j4.jpg"   alt="" srcset=""></td>
+                    <td>Traje de bano</td>
+                    <td>$14.99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$14.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i onclick="return Eliminar()" class="fa-solid fa-trash-can"></i></a></td>
+                    <td><img src="../img/products/j3.jpg"   alt="" srcset=""></td>
+                    <td>Traje de bano</td>
+                    <td>$14.99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$14.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Carrito cupones-->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplicar Cupon</h3>
+            <div>
+                <input type="text" placeholder="Ingrese Cupon" name="" id="">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+            <!--Carrito subtotal-->
+        <div id="subtotal">
+            <h3>SubTotal de Carrito</h3>
+            <table>
+                <tr>
+                    <td>Carrito SubTotal</td>
+                    <td>$180</td>
+                </tr>
+                <tr>
+                    <td>Envío</td>
+                    <td>Libre</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal" onclick="return pago()">Pagar</button>
+        </div>
+    </section>
+
+
+    <!--imagen parte final-->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../img/logo.png" width="140px" alt="ZOE Crochet & Textiles Ecommerce">
+            <h4>Contacto</h4>
+            <p><Strong>Dirrecion:</Strong> Una casita</p>
+            <p><Strong>Telefono:</Strong> +503 6027-8648</p>
+            <p><Strong>Horario de Atención:</Strong>Lunes a Viernes 8am - 5pm</p>
+            <div class="follow">
+                <h4>Síganos</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre Nosotros</h4>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Información de Entrega</a>
+            <a href="#">Politica y Privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contactanos</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Registrarse</a>
+            <a href="#">Ver Carrito</a>
+            <a href="#">Mi Lista De Deseos</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Pasarelas de Pago Seguro</h4>
+            <img src="../img/pay/pay.png" alt="" srcset="">
+        </div>
+
+        <div class="copyrigh">
+            <p>© 2022, BD24K - ZOE Crochet & Textiles Ecommerce</p>
+        </div>
+    </footer>
+
+</body>
+<script src="..\js/Script.js"></script>
+    <script>
+
+function pago(){
+    Swal.fire({
+  title: 'Pagando!',
+  text: 'Procesando Su Compra, esto puede tardar unos Segundos',
+  imageUrl: '../img/pay/pago.gif',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+}
+
+
+function Eliminar(){
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Estas seguro?',
+        text: "Una vez borra ya no se recuperar!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Si, borrar!',
+        cancelButtonText: 'No, cancelar!',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Eliminado!',
+            'Su producto ha sido eliminado.',
+            'success'
+          )
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelado',
+            'Tu producto está a salvo :)',
+            'error'
+          )
+        }
+      })
+}
+
+ </script>
+    <script src="..\js/alert.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</html>
